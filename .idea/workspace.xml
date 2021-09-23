@@ -2,26 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4ccfbdee-95f7-4f39-a29e-79033afd1526" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/doc/3，helloword-使用mybatis提供的api进行操作.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/4，helloword-使用接口式编程.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/5，主配置文件配置详解.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/6，spring整合mybatis.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/MyBatis.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/MyBatisTest1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/SpringMybatisTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/config/MyConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/dao/EmployeeMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/EmployeeMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/EmployeeMapper_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/applicationContext.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/dbconfig.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/mybatis-config-spring.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/mybatis/mapper/EmployeeMapper_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/7，springboot整合mybatis.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-mybatis/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-mybatis/src/main/java/com/example/Application.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-mybatis/src/main/java/com/example/dao/EmployeeMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-mybatis/src/main/java/com/example/entity/Employee.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-mybatis/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/MyBatisTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/MyBatisTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mybatis-config.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/QuickStart.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mybatis-config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/MyBatisTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/MyBatisTest1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/SpringMybatisTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/config/MyConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/dao/EmployeeMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/entity/Employee.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,6 +48,10 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -69,13 +66,16 @@
       <recent name="D:\IdeaProjects\mybatis\doc" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.example.entity" />
+      <recent name="com.example.dao" />
       <recent name="com.example" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\IdeaProjects\mybatis\springboot-mybatis\src\main\resources" />
       <recent name="D:\IdeaProjects\mybatis\doc\img" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.MyBatisTest">
+  <component name="RunManager" selected="Spring Boot.Application">
     <configuration name="MyBatisTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.example.MyBatisTest" />
       <module name="mybatis" />
@@ -115,8 +115,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="springboot-mybatis" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.Application" />
         <item itemvalue="Application.MyBatisTest" />
         <item itemvalue="Application.SpringMybatisTest" />
         <item itemvalue="Application.MyBatisTest1" />
@@ -134,7 +148,7 @@
       <option name="presentableId" value="Default" />
       <updated>1625403457157</updated>
       <workItem from="1625403461304" duration="3974000" />
-      <workItem from="1632414515784" duration="9074000" />
+      <workItem from="1632414515784" duration="10410000" />
     </task>
     <servers />
   </component>
@@ -150,25 +164,61 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="446" y="25" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1632416094298" />
-    <state width="1237" height="151" key="GridCell.Tab.0.bottom" timestamp="1632423823852">
+    <state width="1237" height="124" key="GridCell.Tab.0.bottom" timestamp="1632425181792">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="151" key="GridCell.Tab.0.bottom/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1632423823852" />
-    <state width="1237" height="151" key="GridCell.Tab.0.center" timestamp="1632423823852">
+    <state width="1237" height="124" key="GridCell.Tab.0.bottom/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1632425181792" />
+    <state width="1237" height="124" key="GridCell.Tab.0.center" timestamp="1632425181792">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="151" key="GridCell.Tab.0.center/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1632423823852" />
-    <state width="1237" height="151" key="GridCell.Tab.0.left" timestamp="1632423823852">
+    <state width="1237" height="124" key="GridCell.Tab.0.center/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1632425181792" />
+    <state width="1237" height="124" key="GridCell.Tab.0.left" timestamp="1632425181791">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="151" key="GridCell.Tab.0.left/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1632423823852" />
-    <state width="1237" height="151" key="GridCell.Tab.0.right" timestamp="1632423823852">
+    <state width="1237" height="124" key="GridCell.Tab.0.left/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1632425181791" />
+    <state width="1237" height="124" key="GridCell.Tab.0.right" timestamp="1632425181792">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="151" key="GridCell.Tab.0.right/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1632423823852" />
-    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup" timestamp="1632423041242">
+    <state width="1237" height="124" key="GridCell.Tab.0.right/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1632425181792" />
+    <state width="1237" height="124" key="GridCell.Tab.1.bottom" timestamp="1632425181793">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1632423041242" />
+    <state width="1237" height="124" key="GridCell.Tab.1.bottom/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1632425181793" />
+    <state width="1237" height="124" key="GridCell.Tab.1.center" timestamp="1632425181793">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="124" key="GridCell.Tab.1.center/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1632425181793" />
+    <state width="1237" height="124" key="GridCell.Tab.1.left" timestamp="1632425181792">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="124" key="GridCell.Tab.1.left/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1632425181792" />
+    <state width="1237" height="124" key="GridCell.Tab.1.right" timestamp="1632425181793">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="124" key="GridCell.Tab.1.right/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1632425181793" />
+    <state width="1237" height="124" key="GridCell.Tab.2.bottom" timestamp="1632425181794">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="124" key="GridCell.Tab.2.bottom/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1632425181794" />
+    <state width="1237" height="124" key="GridCell.Tab.2.center" timestamp="1632425181794">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="124" key="GridCell.Tab.2.center/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1632425181794" />
+    <state width="1237" height="124" key="GridCell.Tab.2.left" timestamp="1632425181794">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="124" key="GridCell.Tab.2.left/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1632425181794" />
+    <state width="1237" height="124" key="GridCell.Tab.2.right" timestamp="1632425181794">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="124" key="GridCell.Tab.2.right/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1632425181794" />
+    <state x="28" y="1" key="new project wizard" timestamp="1632424905817">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="28" y="1" key="new project wizard/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1632424905817" />
+    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup" timestamp="1632424023390">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1632424023390" />
   </component>
 </project>
