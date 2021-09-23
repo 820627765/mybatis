@@ -2,19 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4ccfbdee-95f7-4f39-a29e-79033afd1526" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/doc/7，springboot整合mybatis.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot-mybatis/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot-mybatis/src/main/java/com/example/Application.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot-mybatis/src/main/java/com/example/dao/EmployeeMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot-mybatis/src/main/java/com/example/entity/Employee.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springboot-mybatis/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/MyBatisTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/MyBatisTest1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/SpringMybatisTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/config/MyConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/dao/EmployeeMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/entity/Employee.class" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-mybatis/src/main/resources/mybatis/mapper/EmployeeMapper_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-mybatis/src/main/java/com/example/dao/EmployeeMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-mybatis/src/main/java/com/example/dao/EmployeeMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-mybatis/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-mybatis/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-mybatis/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-mybatis/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springboot-mybatis/target/classes/com/example/dao/EmployeeMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/springboot-mybatis/target/classes/com/example/dao/EmployeeMapper.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,7 +35,6 @@
   <component name="ProjectId" id="1uqqRLr3x9aFwRIL1uua46WNbPg" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
-    <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="false" />
     <option name="showLibraryContents" value="true" />
   </component>
@@ -56,11 +47,12 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/mybatis/mapper" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/springboot-mybatis/src/main/resources/mybatis/mapper" />
     <property name="settings.editor.selected.configurable" value="preferences.general" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\IdeaProjects\mybatis\springboot-mybatis\src\main\resources\mybatis\mapper" />
       <recent name="D:\IdeaProjects\mybatis\src\main\resources\mybatis\mapper" />
       <recent name="D:\IdeaProjects\mybatis\src\main\resources" />
       <recent name="D:\IdeaProjects\mybatis\doc" />
@@ -71,6 +63,8 @@
       <recent name="com.example" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\IdeaProjects\mybatis\springboot-mybatis\src\main\resources\mybatis\mapper" />
+      <recent name="D:\IdeaProjects\mybatis\springboot-mybatis\src\main\resources\mybatis\mapper\com\example\dao" />
       <recent name="D:\IdeaProjects\mybatis\springboot-mybatis\src\main\resources" />
       <recent name="D:\IdeaProjects\mybatis\doc\img" />
     </key>
@@ -148,7 +142,7 @@
       <option name="presentableId" value="Default" />
       <updated>1625403457157</updated>
       <workItem from="1625403461304" duration="3974000" />
-      <workItem from="1632414515784" duration="10410000" />
+      <workItem from="1632414515784" duration="11043000" />
     </task>
     <servers />
   </component>
@@ -164,38 +158,38 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="446" y="25" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1632416094298" />
-    <state width="1237" height="124" key="GridCell.Tab.0.bottom" timestamp="1632425181792">
+    <state width="1237" height="264" key="GridCell.Tab.0.bottom" timestamp="1632425811062">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="124" key="GridCell.Tab.0.bottom/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1632425181792" />
-    <state width="1237" height="124" key="GridCell.Tab.0.center" timestamp="1632425181792">
+    <state width="1237" height="264" key="GridCell.Tab.0.bottom/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1632425811062" />
+    <state width="1237" height="264" key="GridCell.Tab.0.center" timestamp="1632425811062">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="124" key="GridCell.Tab.0.center/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1632425181792" />
-    <state width="1237" height="124" key="GridCell.Tab.0.left" timestamp="1632425181791">
+    <state width="1237" height="264" key="GridCell.Tab.0.center/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1632425811062" />
+    <state width="1237" height="264" key="GridCell.Tab.0.left" timestamp="1632425811062">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="124" key="GridCell.Tab.0.left/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1632425181791" />
-    <state width="1237" height="124" key="GridCell.Tab.0.right" timestamp="1632425181792">
+    <state width="1237" height="264" key="GridCell.Tab.0.left/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1632425811062" />
+    <state width="1237" height="264" key="GridCell.Tab.0.right" timestamp="1632425811062">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="124" key="GridCell.Tab.0.right/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1632425181792" />
-    <state width="1237" height="124" key="GridCell.Tab.1.bottom" timestamp="1632425181793">
+    <state width="1237" height="264" key="GridCell.Tab.0.right/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1632425811062" />
+    <state width="1237" height="264" key="GridCell.Tab.1.bottom" timestamp="1632425811063">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="124" key="GridCell.Tab.1.bottom/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1632425181793" />
-    <state width="1237" height="124" key="GridCell.Tab.1.center" timestamp="1632425181793">
+    <state width="1237" height="264" key="GridCell.Tab.1.bottom/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1632425811063" />
+    <state width="1237" height="264" key="GridCell.Tab.1.center" timestamp="1632425811063">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="124" key="GridCell.Tab.1.center/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1632425181793" />
-    <state width="1237" height="124" key="GridCell.Tab.1.left" timestamp="1632425181792">
+    <state width="1237" height="264" key="GridCell.Tab.1.center/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1632425811063" />
+    <state width="1237" height="264" key="GridCell.Tab.1.left" timestamp="1632425811062">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="124" key="GridCell.Tab.1.left/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1632425181792" />
-    <state width="1237" height="124" key="GridCell.Tab.1.right" timestamp="1632425181793">
+    <state width="1237" height="264" key="GridCell.Tab.1.left/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1632425811062" />
+    <state width="1237" height="264" key="GridCell.Tab.1.right" timestamp="1632425811063">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="124" key="GridCell.Tab.1.right/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1632425181793" />
+    <state width="1237" height="264" key="GridCell.Tab.1.right/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1632425811063" />
     <state width="1237" height="124" key="GridCell.Tab.2.bottom" timestamp="1632425181794">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
