@@ -1,0 +1,47 @@
+1，mybatis 中文官网 https://mybatis.org/mybatis-3/zh/index.html
+2，项目搭建步骤
+   1,新建maven项目
+
+   2,加入mybatis 和 jdbc 驱动的 maven依赖
+     <dependency>
+         <groupId>org.mybatis</groupId>
+         <artifactId>mybatis</artifactId>
+         <version>3.5.6</version>
+     </dependency>
+
+     <dependency>
+         <groupId>mysql</groupId>
+         <artifactId>mysql-connector-java</artifactId>
+         <version>6.0.6</version>
+     </dependency>
+
+   3，编写Mybatis主配置文件 mybatis-config.xml 及配置jdbc相关信息。主配置文件的内容可以参考官网配置项
+        <?xml version="1.0" encoding="UTF-8" ?>
+        <!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "http://mybatis.org/dtd/mybatis-3-config.dtd">
+        <configuration>
+            <environments default="development">
+                <environment id="development">
+                    <transactionManager type="JDBC"/>
+                    <dataSource type="POOLED">
+                        <property name="driver" value="${driver}"/>
+                        <property name="url" value="${url}"/>
+                        <property name="username" value="${username}"/>
+                        <property name="password" value="${password}"/>
+                    </dataSource>
+                </environment>
+            </environments>
+            <mappers>
+                <mapper resource="org/mybatis/example/BlogMapper.xml"/>
+            </mappers>
+        </configuration>
+
+   4，编写代码获取 SqlSessionFactory 及 SqlSession 对象。创建 SqlSessionFactory 就是要根据上面的主配置文件来创建
+      。当然也可以不根据主配置文件来创建SqlSessionFactory对象，参考官方案例
+      public static void main(String[] args) throws IOException {
+          String resource = "mybatis-config.xml";
+          InputStream inputStream = Resources.getResourceAsStream(resource);
+          SqlSessionFactory sqlSessionFactory = new SqlSessionFactoryBuilder().build(inputStream);
+          SqlSession sqlSession = sqlSessionFactory.openSession();
+          System.out.println(sqlSession);
+          sqlSession.close();
+      }
