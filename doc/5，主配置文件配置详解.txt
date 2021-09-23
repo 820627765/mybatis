@@ -38,7 +38,7 @@
 
         <!--
             批量注册 sql映射.
-            <package name="com.example.dao"/>  name指定 Mapper接口所在的包名。需要注意的是：
+            <package name="com.example.dao"/>  name指定 Mapper接口所在的包名(会扫描包及子孙包)。需要注意的是：
             1）如果Mapper接口有对应的sql映射文件，那么这些sql映射文件必须和接口在同一路径下，且名字相同
             2）如果Mapper接口没有sql映射文件，而是注解的sql，则可以直接使用
         -->

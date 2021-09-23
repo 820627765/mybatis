@@ -1,0 +1,40 @@
+1,编写一个接口 EmployeeMapper.java
+    public interface EmployeeMapper {
+        Employee getEmployeeById(Integer id);
+    }
+2，修改 EmployeeMapper_1.xml 文件，修改内容如下
+    <?xml version="1.0" encoding="UTF-8" ?>
+    <!DOCTYPE mapper
+            PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+            "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+    <!--namespace，必须制定为 接口全路径-->
+    <mapper namespace="com.example.dao.EmployeeMapper">
+        <!--
+        namespace:名称空间;指定为接口的全类名
+        id：唯一标识，此时的id值必须和namespace指定的接口的方法名一致，才能实现和接口方法对应起来
+        resultType：返回值类型
+        #{id}：从传递过来的参数中取出id值
+
+        Employee getEmployeeById(Integer id);
+         -->
+        <select id="getEmployeeById" resultType="com.example.entity.Employee">
+            select id,last_name lastName,email,gender from t_employee where id = #{id}
+        </select>
+    </mapper>
+3，将修改的sql映射文件 EmployeeMapper_1.xml 注册到主配置文件中
+    <mappers>
+        <!--传统的编写方式 - 第一个sql映射文件-->
+        <mapper resource="EmployeeMapper.xml"/>
+        <!--接口式编程 - 注册到主配置文件中后，Mapper接口就和sql映射文件绑定在一起了-->
+        <mapper resource="EmployeeMapper_1.xml"/>
+    </mappers>
+4，基于接口编写操作数据库的逻辑 MyBatisTest1.java
+    public static void main(String[] args) throws IOException {
+        SqlSessionFactory sqlSessionFactory = new SqlSessionFactoryBuilder().build(Resources.getResourceAsStream("mybatis-config.xml"));
+        SqlSession sqlSession = sqlSessionFactory.openSession();
+        //获取 EmployeeMapper 对象,这是一个代理对象
+        EmployeeMapper mapper = sqlSession.getMapper(EmployeeMapper.class);
+        Employee employee = mapper.getEmployeeById(1);
+        System.out.println(employee);
+        sqlSession.close();
+    }

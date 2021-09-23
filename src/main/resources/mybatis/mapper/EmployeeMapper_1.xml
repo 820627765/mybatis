@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--namespace，必须制定为 接口全路径-->
+<mapper namespace="com.example.dao.EmployeeMapper">
+    <!--
+    namespace:名称空间;指定为接口的全类名
+    id：唯一标识，此时的id值必须和namespace指定的接口的方法名一致，才能实现和接口方法对应起来
+    resultType：返回值类型
+    #{id}：从传递过来的参数中取出id值
+
+    Employee getEmployeeById(Integer id);
+     -->
+    <select id="getEmployeeById" resultType="com.example.entity.Employee">
+		select id,last_name lastName,email,gender from t_employee where id = #{id}
+	</select>
+</mapper>

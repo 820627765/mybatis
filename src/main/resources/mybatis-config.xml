@@ -8,13 +8,39 @@
             <transactionManager type="JDBC"/>
             <dataSource type="POOLED">
                 <property name="driver" value="com.mysql.jdbc.Driver"/>
-                <property name="url" value="jdbc:mysql://localhost:3306/mybatis?useUnicode=true&amp;characterEncoding=utf-8&amp;useSSL=false"/>
+                <property name="url"
+                          value="jdbc:mysql://localhost:3306/mybatis?useUnicode=true&amp;characterEncoding=utf-8&amp;useSSL=false&amp;serverTimezone=UTC"/>
                 <property name="username" value="root"/>
                 <property name="password" value="znbznb"/>
             </dataSource>
         </environment>
     </environments>
     <mappers>
+        <!--
+            mapper:注册一个sql映射，属性有如下
+                - resource  引用类路径下的sql映射文件
+                    <mapper resource="EmployeeMapper_1.xml"/>
+                - url 引入网络路径或磁盘路径下的sql映射文件
+                - class 引用Mapper接口的全路径。但是这样配置一定要注意：
+                  1）配置的Mapper接口对应的那个sql映射文件必须和接口包路径相同，且接口名和sql映射文件名必须相同，
+                    否则接口和sql映射文件绑定不上。看源码可知
+                  2）对于sql语句使用注解方式实现的，就可以没有sql映射文件了
+                    <mapper class="com.example.dao.EmployeeMapper"/>
+        -->
 
+        <!--传统的编写方式 - 第一个sql映射文件-->
+        <mapper resource="EmployeeMapper.xml"/>
+        <!--接口式编程 - 注册到主配置文件中后，Mapper接口就和sql映射文件绑定在一起了-->
+        <mapper resource="EmployeeMapper_1.xml"/>
+        <!--
+        <mapper class="com.example.dao.EmployeeMapper"/>
+        -->
+
+        <!--
+            批量注册 sql映射.
+            <package name="com.example.dao"/>  name指定 Mapper接口所在的包名。需要注意的是：
+            1）如果Mapper接口有对应的sql映射文件，那么这些sql映射文件必须和接口在同一路径下，且名字相同
+            2）如果Mapper接口没有sql映射文件，而是注解的sql，则可以直接使用
+        -->
     </mappers>
 </configuration>

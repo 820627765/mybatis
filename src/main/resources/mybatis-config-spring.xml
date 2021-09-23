@@ -8,8 +8,7 @@
             <transactionManager type="JDBC"/>
             <dataSource type="POOLED">
                 <property name="driver" value="com.mysql.jdbc.Driver"/>
-                <property name="url"
-                          value="jdbc:mysql://localhost:3306/mybatis?useUnicode=true&amp;characterEncoding=utf-8&amp;useSSL=false&amp;serverTimezone=UTC"/>
+                <property name="url" value="jdbc:mysql://localhost:3306/mybatis?useUnicode=true&amp;characterEncoding=utf-8&amp;useSSL=false&amp;serverTimezone=UTC"/>
                 <property name="username" value="root"/>
                 <property name="password" value="znbznb"/>
             </dataSource>
@@ -30,8 +29,9 @@
 
         <!--传统的编写方式 - 第一个sql映射文件-->
         <mapper resource="EmployeeMapper.xml"/>
-        <!--接口式编程 - 注册到主配置文件中后，Mapper接口就和sql映射文件绑定在一起了-->
+        <!--接口式编程 - 注册到主配置文件中后，Mapper接口就和sql映射文件绑定在一起了
         <mapper resource="EmployeeMapper_1.xml"/>
+        -->
         <!--
         <mapper class="com.example.dao.EmployeeMapper"/>
         -->

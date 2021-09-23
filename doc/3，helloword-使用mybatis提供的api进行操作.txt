@@ -1,0 +1,35 @@
+1，新建 Employee.java 实体文件
+2，新建数据表 t_employee
+3，新建 EmpoyeeMapper.xml sql映射文件
+    <?xml version="1.0" encoding="UTF-8" ?>
+    <!DOCTYPE mapper
+            PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+            "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+    <!--namespace，此时可以随意定义-->
+    <mapper namespace="com.example.mybatis.EmployeeMapper">
+        <!--
+        namespace:名称空间;指定为接口的全类名
+        id：唯一标识
+        resultType：返回值类型
+        #{id}：从传递过来的参数中取出id值
+
+        public Employee getEmpById(Integer id);
+         -->
+        <select id="getEmpById" resultType="com.example.entity.Employee">
+            select id,last_name lastName,email,gender from t_employee where id = #{id}
+        </select>
+    </mapper>
+4，将 EmployeeMapper.xml sql映射文件，注册到全局配置文件中，注册代码如下
+    <mappers>
+        <mapper resource="EmployeeMapper.xml"/>
+    </mappers>
+4，编写查询代码 MyBatisTest.java ，如下
+    public static void main(String[] args) throws IOException {
+        SqlSessionFactory sqlSessionFactory = new SqlSessionFactoryBuilder().build(Resources.getResourceAsStream("mybatis-config.xml"));
+        SqlSession sqlSession = sqlSessionFactory.openSession();
+        System.out.println(sqlSession);
+        // 第一个参数为：当前要执行sql的唯一标识= namespace + . + sql的Id
+        Employee employee = sqlSession.selectOne("com.example.mybatis.EmployeeMapper.getEmpById", 1);
+        System.out.println(employee);
+        sqlSession.close();
+    }
